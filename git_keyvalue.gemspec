@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Alexis Gallagher"]
   spec.email         = ["alexis@alexisgallagher.com"]
   spec.description   = %q{Treat a remote git repo as a simple key/value store}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.summary       = %q{Treat a remote git repo as a simple key/value store}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "yard"
+  spec.add_development_dependency "redcarpet"
 end

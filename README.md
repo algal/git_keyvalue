@@ -26,12 +26,14 @@ Or install it yourself as:
 
 ## Usage
 
-An example of normal usage:
+An example:
 
-    $  load 'git_keyvalue.rb'
+    $  require 'rubygems'
+    $  require 'bundler/setup
+    $  require 'git_keyvalue'
     $  # make sure you have network and permissions access to the repo URL
     $  # which can be any valid git URL (i.e.: http, ssh, git, or file schemes)
-    $  g = KeyValueRepo.new('http://githuben.com/path/to/repo')
+    $  g = GitKeyvalue::KeyValueRepo.new('http://githuben.com/path/to/repo/')
     $  g.get('metadata/file1.txt')
     $  => 'I am the contents of metadata/file1.txt!'
     $  g.put('metadata/file1.txt','new contents of metadata/file1.txt')
