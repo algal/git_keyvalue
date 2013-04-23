@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.has_rdoc = 'yard'
   spec.extra_rdoc_files      = ['README.md']
   spec.required_ruby_version = '>= 1.9.3'
   spec.requirements          = 'git (known good with v1.7.9.6)'
